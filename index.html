@@ -1,32 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Мир Танков - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <header>
-        <h1>Загрузка на Github pages</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="tanks.html">Танки</a></li>
+                <li><a href="tactics.html">Тактики</a></li>
+            </ul>
+        </nav>
+        <h1>Добро пожаловать в Мир Танков!</h1>
+        <img src="https://avatars.mds.yandex.net/i?id=55705427922888a31467760b2125dad7dc0dfc69-4397183-images-thumbs&n=13" alt="World of Tanks Logo">
     </header>
 
     <main>
-
-        <h2></h2>
-        <section>
-
-            <div class="cat_box cb1">наш</div>
-            <div class="cat_box cb2">первый</div>
-            <div class="cat_box cb3">тестовый</div>
-            <div class="cat_box cb4">сайт</div>
+        <section class="hero">
+            <h2>Почувствуй мощь легендарных танков!</h2>
+            <p>Мир Танков - это массовая многопользовательская онлайн-игра, посвященная бронированной технике середины XX века. Сражайтесь плечом к плечу с друзьями, прокачивайте свою технику и станьте настоящим танковым асом!</p>
         </section>
 
+        <section class="featured-tanks">
+            <h2>Танки в игре</h2>
+            <div class="tank-grid">
+                <div class="tank-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=eefd6b36b60527e60b5cc44f510294e2d6735243-10157623-images-thumbs&n=13" alt="Танк 1">
+                    <h3>Т-34</h3>
+                    <p>Советский средний танк Т-34 - легенда Второй мировой войны.советский средний танк периода Великой Отечественной войны, выпускался серийно с 1940 года</p>
+                </div>
+                <div class="tank-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=b5c4c77a8524872ad07a34fa159f0d9e1ea9073f-9831706-images-thumbs&n=13" alt="Танк 2">
+                    <h3>Tiger I</h3>
+                    <p>немецкий тяжёлый танк, разработанный фирмой «Хеншель» в 1942 году и выпускавшийся серийно с августа 1942 года до августа 1944 года.</p>
+                </div>
+                </div>
+        </section>
 
+        </section>
+    </main>
+    <header>
+        <h1>Тактики и стратегии в Мире Танков</h1>
+    </header>
+
+    <main>
+        <section class="tactics-list">
+            <h2>Основные тактики</h2>
+            <ol>
+                <li>Захват базы</li>
+                <li>Оборона базы</li>
+                <li>Фланговый обход</li>
+                <li>Игра от рельефа</li>
+            </ol>
+        </section>
+        <section class="tank-types">
+            <h2>Типы танков</h2>
+            <ul>
+                <li>Легкие танки</li>
+                <li>Средние танки</li>
+                <li>Тяжелые танки</li>
+                <li>ПТ-САУ</li>
+                <li>САУ</li>
+            </ul>
+        </section>
+
+        <section class="nation-tanks">
+            <h2>Танки разных наций</h2>
+            <div class="nation-grid">
+                <div class="nation-card">
+                    <h3>СССР</h3>
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/1811900/pub_5db17f3abd639600ad173d17_5db1828e3f548700ac5b110b/scale_1200" alt="Танки СССР">
+                    
+                </div>
+                 <div class="nation-card">
+                    <h3>Германия</h3>
+                    <img src="https://files.vgtimes.ru/posts/2021-09/thumbs/1632751741_wot_01_05.webp" alt="Танки Германии">
+                    
+                </div>
+             </div>
+        </section>
     </main>
 
-    
-    
+    <footer>
+    </footer>
 </body>
 </html>
+
+        <section class="registration">
+            <h2>Присоединяйся к игре!</h2>
+            <form>
+                <input type="email" placeholder="Введите свой email" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
