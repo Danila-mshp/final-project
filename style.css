@@ -68,16 +68,6 @@ main {
     text-align: center;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
 #tactics {
     padding: 2rem;
     background-color: #fff;
@@ -208,23 +198,17 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-
 @media screen and (max-width: 768px) {
-
     body {
         font-size: 16px;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
 
     main {
         padding: 1rem;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
     }
 
     #tactics,
@@ -266,7 +250,6 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-
     main {
         padding: 3rem;
     }
