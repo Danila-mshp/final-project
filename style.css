@@ -77,6 +77,7 @@ main {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+
 #tactics {
     padding: 2rem;
     background-color: #fff;
@@ -182,10 +183,6 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
-nav a.active,
-nav a:hover {
-    background-color: #4CAF50;
-}
 
 .download-link {
     display: block;
@@ -211,24 +208,29 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+
 @media screen and (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+    
     header h1 {
         font-size: 2rem;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: space-between;
+    main {
+        padding: 1rem;
     }
 
-    nav ul li {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
+    .hero h2 {
+        font-size: 2rem;
     }
 
     #tactics,
     #tanks {
         max-width: 100%;
+        padding: 1rem;
     }
 
     #tactics ol {
@@ -237,5 +239,57 @@ nav a:hover {
 
     #tanks ul {
         grid-template-columns: 1fr;
+    }
+
+    #tanks li {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        padding: 3rem;
+    }
+
+    #tactics,
+    #tanks {
+        max-width: 1200px;
+    }
+
+    #tactics h2,
+    #tanks h2 {
+        font-size: 2.5rem;
+    }
+
+    #tactics ol {
+        padding-left: 3em;
+    }
+
+    #tanks ul {
+        grid-gap: 2rem;
+    }
+
+    download-link a {
+        padding: 1.5rem 3rem;
     }
 }
